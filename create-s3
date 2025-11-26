@@ -1,0 +1,8 @@
+aws s3 ls s3://kodekloud-lab1-jitendra
+Identify your bucket name
+aws s3 ls | grep kodekloud-lab-
+touch airplane1.jpg airplane2.jpg airplane3.jpg
+
+aws s3 ls s3://kodekloud-lab1-jitendra --recursive | grep kodekloud-
+aws s3 ls
+aws s3 mb s3://kodekloud-lab1-jitendra --region us-east-1
