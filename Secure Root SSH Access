@@ -1,0 +1,15 @@
+ssh banner@stapp03
+sudo su -
+cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
+vi /etc/ssh/sshd_config      # set PermitRootLogin no
+systemctl restart sshd
+ssh root@stapp03   
+
+ssh steve@stapp02
+sudo su -
+cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
+vi /etc/ssh/sshd_config      # set PermitRootLogin no
+systemctl restart sshd
+ssh root@stapp02             # test from jumphost
+
+
